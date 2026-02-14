@@ -1,0 +1,73 @@
+date,crop,state,price
+01-01-2023,onion,maharashtra,13
+01-02-2023,onion,maharashtra,19
+01-03-2023,onion,maharashtra,5.25
+01-04-2023,onion,maharashtra,5.5
+01-05-2023,onion,maharashtra,14.5
+01-06-2023,onion,maharashtra,12.5
+01-07-2023,onion,maharashtra,13
+01-08-2023,onion,maharashtra,18.5
+01-09-2023,onion,maharashtra,22
+01-10-2023,onion,maharashtra,30.25
+01-11-2023,onion,maharashtra,35
+01-12-2023,onion,maharashtra,31
+01-01-2024,onion,maharashtra,17.5
+01-02-2024,onion,maharashtra,37.5
+01-03-2024,onion,maharashtra,13.5
+01-04-2024,onion,maharashtra,14
+01-05-2024,onion,maharashtra,9.5
+01-06-2024,onion,maharashtra,22.5
+01-07-2024,onion,maharashtra,25
+01-08-2024,onion,maharashtra,25
+01-09-2024,onion,maharashtra,16.5
+01-10-2024,onion,maharashtra,30
+01-11-2024,onion,maharashtra,24
+01-12-2024,onion,maharashtra,18.5
+01-01-2023,wheat,UP,27.5
+01-02-2023,wheat,UP,25
+01-03-2023,wheat,UP,24
+01-04-2023,wheat,UP,21.25
+01-05-2023,wheat,UP,20.75
+01-06-2023,wheat,UP,20
+01-07-2023,wheat,UP,19.5
+01-08-2023,wheat,UP,21
+01-09-2023,wheat,UP,22.5
+01-10-2023,wheat,UP,23
+01-11-2023,wheat,UP,25.5
+01-12-2023,wheat,UP,24
+01-01-2024,wheat,UP,25.5
+01-02-2024,wheat,UP,25
+01-03-2024,wheat,UP,24
+01-04-2024,wheat,UP,22.75
+01-05-2024,wheat,UP,23
+01-06-2024,wheat,UP,23.5
+01-07-2024,wheat,UP,23.75
+01-08-2024,wheat,UP,24.5
+01-09-2024,wheat,UP,25.5
+01-10-2024,wheat,UP,24.75
+01-11-2024,wheat,UP,27.5
+01-12-2024,wheat,UP,26.5
+01-01-2023,rice,andhra pradesh,32
+01-02-2023,rice,andhra pradesh,32.5
+01-03-2023,rice,andhra pradesh,33
+01-04-2023,rice,andhra pradesh,31.5
+01-05-2023,rice,andhra pradesh,31.5
+01-06-2023,rice,andhra pradesh,33
+01-07-2023,rice,andhra pradesh,31.5
+01-08-2023,rice,andhra pradesh,32
+01-09-2023,rice,andhra pradesh,34
+01-10-2023,rice,andhra pradesh,35.5
+01-11-2023,rice,andhra pradesh,38
+01-12-2023,rice,andhra pradesh,41
+01-01-2024,rice,andhra pradesh,39.5
+01-02-2024,rice,andhra pradesh,39
+01-03-2024,rice,andhra pradesh,40
+01-04-2024,rice,andhra pradesh,40.5
+01-05-2024,rice,andhra pradesh,41
+01-06-2024,rice,andhra pradesh,41.5
+01-07-2024,rice,andhra pradesh,42
+01-08-2024,rice,andhra pradesh,42.5
+01-09-2024,rice,andhra pradesh,43
+01-10-2024,rice,andhra pradesh,43.5
+01-11-2024,rice,andhra pradesh,44
+01-12-2024,rice,andhra pradesh,45.5
