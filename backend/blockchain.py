@@ -52,12 +52,18 @@ def store_hash(data):
     signed_tx = account.sign_transaction(transaction)
 
     # Send transaction
-    tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+    tx_hash = w3.eth.send_raw_transaction(
+    getattr(signed_tx, "raw_transaction", signed_tx.raw_transaction)
+)
+
 
     # Wait for receipt
     receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
 
+    
     return {
         "data_hash": data_hash,
         "transaction_hash": tx_hash.hex()
     }
+
+    

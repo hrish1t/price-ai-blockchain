@@ -6,10 +6,9 @@ from blockchain import store_hash
 
 app = FastAPI()
 
-# Load ML model
 model = joblib.load("saved_model.pkl")
 
-# Define input schema
+# ✅ Define InputData HERE (outside function)
 class InputData(BaseModel):
     lag_1: float
     lag_2: float
@@ -22,27 +21,27 @@ class InputData(BaseModel):
 @app.post("/predict")
 def predict(data: InputData):
 
-    # Create dataframe
     input_df = pd.DataFrame([[ 
         data.lag_1,
-        data.lag_7,
-        data.ma_7,
+        data.lag_2,
+        data.ma_3,
         data.rainfall,
         data.temperature,
         data.month
     ]], columns=[
         "lag_1",
-        "lag_7",
-        "ma_7",
+        "lag_2",
+        "ma_3",
         "rainfall",
         "temperature",
         "month"
     ])
 
-    # Predict price
-    prediction = model.predict(input_df)[0]
+    try:
+        prediction = model.predict(input_df)[0]
+    except Exception as e:
+        return {"error": str(e)}
 
-    # Calculate % change
     change_percent = ((prediction - data.lag_1) / data.lag_1) * 100
 
     if change_percent > 10:
@@ -52,13 +51,14 @@ def predict(data: InputData):
     else:
         risk = "LOW"
 
-    # Store hash on blockchain
     blockchain_result = store_hash(data.dict())
 
+
     return {
-        "predicted_price": round(prediction, 2),
-        "percent_change": round(change_percent, 2),
-        "risk": risk,
-        "blockchain_hash": blockchain_result["data_hash"],
-        "transaction_hash": blockchain_result["transaction_hash"]
-    }
+    "predicted_price": round(prediction, 2),
+    "percent_change": round(change_percent, 2),
+    "risk": risk,
+    "blockchain_hash": blockchain_result["data_hash"],
+    "transaction_hash": blockchain_result["transaction_hash"]
+}
+

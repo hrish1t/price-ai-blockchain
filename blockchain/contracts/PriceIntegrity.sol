@@ -1,12 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/*
-    AI + Blockchain Price Integrity Contract
-    Stores SHA256 hash of input data used in price prediction.
-    Ensures tamper-proof audit trail.
-*/
-
 contract PriceIntegrity {
 
     struct Record {
@@ -47,9 +41,9 @@ contract PriceIntegrity {
         public
         view
         returns (
-            string memory dataHash,
-            uint256 timestamp,
-            address sender
+            string memory,
+            uint256,
+            address
         )
     {
         Record memory r = records[index];
